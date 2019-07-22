@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javatask</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto student-form">
+                <div class="card card-signin my-5">
+                    <div class="card-body ">
+                        <h5 class="card-title text-center">Hi</h5>
+                        <div class="form-signin">
+                            <div class="form-label-group">
+                                <input id="name" type="text" class="form-control student-input my-3" placeholder="Name..." required autofocus>
+                                <input id="surname" type="text" class="form-control student-input  my-3" placeholder="Surname...">
+                                <input id="email" type="email" class="form-control student-input my-3" placeholder="Email address" >
+                                <input id="phone" type="number" class="form-control student-input my-3" placeholder="Phone...">
+                                <input id="age" type="number" class="form-control student-input my-3" placeholder="Age...">
+                                <button class="btn btn-lg btn-secondary btn-block text-uppercase " id="btn-save"  onclick="empty();empty1();empty2();empty3();empty4()"  >Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                    <table class="table">
+                            <thead>
+                              <tr>
+                                <th onclick="sortName()">Name</th>
+                                <th onclick="sortSurname()">Surname</th>
+                                <th onclick="sortEmail()">Email</th>
+                                <th onclick="sortPhone()">Phone</th>
+                                <th onclick="sortAge()">Age</th>
+                              </tr>
+                            </thead>
+                            <tbody   class="student-list" >
+
+                            </tbody>
+                            </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
